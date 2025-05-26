@@ -133,7 +133,7 @@ A command-line e-commerce system for managing users, products, carts, and orders
 ## Security
 ### **Security Features**:
 
-### **Password Hashing (SHA-256)**
+#### **Password Hashing (SHA-256)**
 - **Reason:** Basic security measure to protect user credentials.  
 - **Benefit:** Prevents storing plaintext passwords.  
 
