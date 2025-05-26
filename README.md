@@ -100,44 +100,44 @@ A command-line e-commerce system for managing users, products, carts, and orders
 
 ### **Class Division** :
 
-### **User Class**
+#### **User Class**
 - **Reason:** Separates authentication and user management from other functionality.  
 - **Benefit:** Easier to maintain user-related features and security in one place.  
 
-### **Product Class**
+#### **Product Class**
 - **Reason:** Isolates inventory management operations.  
 - **Benefit:** Centralizes product-related code for better organization.  
 
-### **Cart Class**
+#### **Cart Class**
 - **Reason:** Encapsulates shopping cart functionality.  
 - **Benefit:** Keeps temporary user selections separate from permanent inventory.  
 
-### **Order Class**
+#### **Order Class**
 - **Reason:** Handles completed transactions.  
 - **Benefit:** Maintains clean separation between active shopping and order history/processing.  
 
 
 ### **Technology Choices** :
 
-### **SQLite Database**
+#### **SQLite Database**
 - **Reason:** Lightweight, serverless database requiring no configuration.  
 - **Benefit:** Self-contained in a single file, perfect for smaller applications with moderate traffic.  
 - **Alternative Considered:** MySQL was considered but deemed overkill for this application.  
 
-### **Python Standard Library**
+#### **Python Standard Library**
 - **Reason:** Built-in modules (`sqlite3`, `hashlib`, `datetime`) minimize dependencies.  
 - **Benefit:** Simplifies deployment with no external packages needed.  
 
 ---
 
 ## Security
-### **Security Features**:
+### **Security Features** :
 
 #### **Password Hashing (SHA-256)**
 - **Reason:** Basic security measure to protect user credentials.  
 - **Benefit:** Prevents storing plaintext passwords.  
 
-### **OTP for Order Verification**
+#### **OTP for Order Verification**
 - **Reason:** Simple delivery confirmation mechanism.  
 - **Benefit:** Reduces potential for delivery fraud or disputes.  
 
